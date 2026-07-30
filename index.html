@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahnaf Ibnu Nur Ihsan — Front-End Developer & Designer</title>
+<meta name="description" content="Ahnaf Ibnu Nur Ihsan is a front-end developer, UI/UX designer, and graphic designer based in Indonesia.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">AF.</a>
+
+  <div class="nav-primary">
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html" aria-current="page">home</a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="work.html">work</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="https://www.instagram.com/ahnafvia/" target="_blank" rel="noopener" aria-label="Instagram">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.6" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a href="mailto:ahnafibnunurihsan@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero">
+    <p>
+      Ahnaf Ibnu Nur Ihsan is a <em>front-end developer, UI/UX designer, and
+      graphic designer.</em> He specializes in engineering interactive web
+      systems, crafting intuitive user experiences, and developing cohesive
+      visual assets. He currently operates out of Indonesia.
+    </p>
+  </section>
+
+  <section class="work-preview reveal">
+    <div class="preview-grid">
+      <a class="project-card" href="work.html">
+        <div class="project-thumb">
+          <img src="assets/mdrf.png" alt="Modrift project preview shown on laptop, phone, and tablet mockups">
+        </div>
+        <h3>Modrift</h3>
+      </a>
+
+      <a class="project-card" href="work.html">
+        <div class="project-thumb">
+          <img src="assets/elerng.png" alt="E-Leernin project preview shown on laptop and tablet mockups">
+        </div>
+        <h3>E-Leernin&#8482;</h3>
+      </a>
+
+      <a class="project-card" href="work.html">
+        <div class="project-thumb">
+          <img src="assets/pmk cmp.png" alt="PMK Company Profile project preview shown on phone and tablet mockups">
+        </div>
+        <h3>PMK Company Profile</h3>
+      </a>
+
+      <a class="project-card" href="work.html">
+        <div class="project-thumb">
+          <img src="assets/spra.png" alt="Supra Landing Page project preview shown on a laptop mockup">
+        </div>
+        <h3>Supra Landing Page</h3>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact reveal">
+    <div class="contact-inner">
+      <div class="contact-intro">
+        <h2>Let's Talk.</h2>
+        <p>Got a project in mind? Fill out the form and tell me about your scope, timeline, and budget — the more detailed the better.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/ahnafvia/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></svg>
+          </a>
+          <a href="mailto:ahnafibnunurihsan@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          </a>
+          <a href="https://github.com/Ahnaf03" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1-.3-3.4 1.2a11.5 11.5 0 0 0-6 0C6.7 2.8 5.7 3.1 5.7 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.3 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="field-group">
+          <label class="form-label" for="wname">Full Name <span class="req">(required)</span></label>
+          <input type="text" id="wname" name="name" required>
+        </div>
+        <div class="field-group">
+          <label class="form-label" for="wemail">Email <span class="req">(required)</span></label>
+          <input type="email" id="wemail" name="email" required>
+        </div>
+        <div class="field-group">
+          <label class="form-label" for="wmsg">Which project caught your eye? <span class="req">(required)</span></label>
+          <textarea id="wmsg" name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-send">send</button>
+        <p class="form-note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  &copy; 2026 Ahnaf Ibnu Nur Ihsan. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
